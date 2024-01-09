@@ -1,0 +1,1 @@
+<?php  echo 'Thanks for leave me a message, we will contact soon!'; ?>
