@@ -1,7 +1,7 @@
 
 // videoControls.js
 
-export function videoControls() {
+function videoControls() {
   const video = document.querySelector('#myVideo');
   const playButton = document.querySelector('#playButton');
   const pauseButton = document.querySelector('#pauseButton');
@@ -20,3 +20,5 @@ export function videoControls() {
     video.play();
   });
 }
+
+videoControls();

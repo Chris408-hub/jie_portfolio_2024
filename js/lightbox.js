@@ -1,6 +1,6 @@
 // thanksPage.js
 
-export function thanksPage() {
+function thanksPage() {
   const thanksBtn = document.querySelector('#close-btn');
   const openBtn = document.querySelector('#message-btn');
   const lightbox = document.querySelector('#thanks-light-box');
@@ -16,6 +16,5 @@ export function thanksPage() {
   openBtn.addEventListener('click', openPage);
   thanksBtn.addEventListener('click', closePage);
 }
-
 
 thanksPage();

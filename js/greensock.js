@@ -1,9 +1,7 @@
 // aboutMePage.js
 
-import gsap from 'gsap';
-import { ScrollTrigger, ScrollToPlugin } from 'gsap/all';
 
-export function aboutMePage() {
+
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(ScrollToPlugin);
 
@@ -32,4 +30,3 @@ export function aboutMePage() {
       },
       x: "20%", ease: Bounce.easeOut
     });
-}

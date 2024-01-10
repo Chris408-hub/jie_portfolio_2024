@@ -1,6 +1,6 @@
 
 
-  export function hamburgerMenu() {
+  function hamburgerMenu() {
   const hamButton = document.querySelector('.hamburger-button');
   const burgerCon = document.querySelector('#burger-con');
 
@@ -10,7 +10,6 @@
   }
 
   hamButton.addEventListener('click', toggleMenu, false);
-  }
-
-  hamburgerMenu()
+}
     
+hamburgerMenu();

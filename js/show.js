@@ -8,26 +8,26 @@
     const codeProjects = document.querySelectorAll('.code');
     const designProjects = document.querySelectorAll('.design');
 
-    export function hideAllProjects() {
+    function hideAllProjects() {
         allProjects.forEach(project => {
             project.style.display = 'none';
         });
     }
 
-    export function showAllProjects() {
+    function showAllProjects() {
         allProjects.forEach(project => {
             project.style.display = 'block';
         });
     }
 
-    export function showCodeProjects() {
+    function showCodeProjects() {
         hideAllProjects();
         codeProjects.forEach(project => {
             project.style.display = 'block';
         });
     }
 
-    export function showDesignProjects() {
+    function showDesignProjects() {
         hideAllProjects();
         designProjects.forEach(project => {
             project.style.display = 'block';
