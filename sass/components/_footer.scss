@@ -5,7 +5,7 @@
 display: flex;
 justify-content: space-between;
 margin-top: 150px;
-// margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
     #main-footer p{
@@ -14,28 +14,23 @@ margin-top: 150px;
         
     }
 
-
-
-
-#case-footer{
-  
-display: flex;
-justify-content: space-evenly;
-
-   a{
-    display: block;
-    width: 50%;
-    height: 30%;
-    text-align: center;
-    img{
-      width: 50%;
-      height: 50%;
-
+  #index-page{
+      position: relative;
+    footer{
+      position: absolute;
+      top: 150%;
     }
+  }
+
+@media screen and (min-width: 728px) {
+  #index-page{
+    footer{
+
+  top: 180%;
+    }
+  }
+ 
 
 }
 
-footer p {
-    line-height: 40px;
-}
-}
+

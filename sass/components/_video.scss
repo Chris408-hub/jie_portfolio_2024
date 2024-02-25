@@ -1,54 +1,79 @@
 @use '../abstracts' as a;
 
-
 .video-player {
   display: flex;
   flex-direction: column; 
   align-items: center; 
-  height: 100vh;
+  height: auto;
+
+  position: relative;
 
   #myVideo{
-  max-width: 800px; 
   width: 100%; 
   }
 }
 
-.controls {
 
-margin-top: 25px;
-    display: flex;
+
+.controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: center; 
-}
+    display: none;
+
 
 .video-btn{
-    width: 90px;
-    height: 75px;
-    border-radius: 75px;
-  padding: 8px 16px;
-  margin: 0 5px;
-  font-size: 16px;
-  cursor: pointer;
-    color: #333;
-    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: a.$btn-color;
+    margin: 0 5px; 
+    border: none;
+
+
     &:hover{
-        background-color: a.$light-blue;
+        background-color: a.$btn-hover;
+
     }
 
- 
+  
+
+
+}
 }
 
-// #playButton {
-//   background-color: #006ab0;
-// }
-
-// #pauseButton {
-//   background-color: #941001;
-// }
-
-// #restartButton {
-//   background-color: #008f3b;
-// }
 
 
+@media screen and (min-width: 768px){
+
+
+  #myVideo{
+  max-width: 80%; 
+  }
+
+.video-btn{
+    width: 120px;
+    height: 120px;
+
+    
+  margin: 0px 15px;
+
+}
+}
+
+
+@media screen and (min-width: 1920px){
+  .video-btn{
+    width: 350px;
+    height:350px;
+
+    
+  margin: 0px 20px;
+
+}
+}
 
 
