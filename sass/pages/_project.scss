@@ -2,6 +2,7 @@
 
 #project{
 
+    margin-bottom: -10px;
 .title {
 
     margin-top: 50px;
@@ -18,39 +19,53 @@
     }
 
 #select{
-        margin-top:50px;
-        // margin-bottom: 20px;
+        margin-top:80px;
+        margin-bottom: 20px;
     ul{
         display: flex;
-        justify-content:space-evenly;    
+
         
         button{
+            margin-left: 15px;
 
-            width: 80px;
-            height: 50px;
-            border-radius: 75PX;
-            background-color: a.$middle-color;
+            font-size:15px;
+            width: 100px;
+            height: 90px;
+            border-radius: 75px;
+            background-color: a.$btn-color;
             color: #fff;
             &:hover{
             border: 2px solid #fff;
-            background-color: a.$light-blue;
+            background-color: a.$btn-hover;
             }
         }
     }
-}}
+}
+}
+
 #project-gallery{
 
     margin: 0 auto;
-    max-width: 1920px;
+
 }
 
-   .gallery-box {
-        width: 90%;
-        margin: 10px;
+.gallery-box {
+    background-color: rgba(13, 67, 115, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 20px;
+
+    .project-title{
+        font-size: 12px;
+        color: a.$btn-hover;
+        margin-bottom: 20px;
+
     }
+}
+
     .gallery-image{
-        width: 100%;
-        height: 230px;
+        width: 44vh;
+        height: 30vh;
         transition: transform 0.3s ease-in-out;
         &:hover{
         transform: scale(0.9);
@@ -58,36 +73,31 @@
     }
     }
 
-    
+
 
 @media screen and (min-width: 768px){
-
-
-#select{
-    ul{
-        button{
-
-            width: 110px; 
-            height: 80px;
-
-            }
-        }
-    }
-
 
 #project-gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
 
-}
-.gallery-box{
-    width: 48%;
-}
-.gallery-image{
-height: 90%;
-}
+.gallery-box {
+    .project-title{
+        font-size: 15px;
+        margin: 20px 0;
 
-
+    }
 }
 
+    .gallery-image{
+        width: 600px;
+        height: 400px;
+
+    }
+
+
+
+}
+}

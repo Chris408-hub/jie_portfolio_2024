@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     #logo {
-            width: 200px;
+            width: 140px;
             margin: 30px 30px;
         }
 
@@ -46,7 +46,7 @@
                     font-size: 20px;
                     &:hover {
 
-                        color: a.$light-blue;
+                        color: a.$btn-hover;
                     }
                 }
             }
@@ -64,7 +64,7 @@
     @media screen and (min-width: 768px) {
 
     #logo {
-            width: 300px;
+            width: 180px;
         }
 
 
