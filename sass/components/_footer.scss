@@ -14,7 +14,8 @@ margin-bottom: 10px;
         
     }
 
-  #index{
+ #index-page{
+
       position: relative;
     footer{
       position: absolute;
@@ -23,10 +24,9 @@ margin-bottom: 10px;
   }
 
 @media screen and (min-width: 728px) {
-  #index{
-    position: relative;
+
+  #index-page{
     footer{
-  position: absolute;
   top: 180%;
     }
   }
