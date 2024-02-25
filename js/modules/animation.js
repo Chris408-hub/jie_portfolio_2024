@@ -1,7 +1,4 @@
 // aboutMe-Page.js
-
-
-
 //adding greenSock SplitText
     
 

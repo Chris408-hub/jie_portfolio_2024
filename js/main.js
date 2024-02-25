@@ -2,7 +2,7 @@ import { hamburgerMenu } from './modules/hamburger.js';
 import { textAnimation } from './modules/animation.js';
 import { show } from './modules/show.js';
 import { videoControls } from './modules/video.js';
-import { thanksPage } from './modules/lightbox.js';
+import { ajaxData } from './modules/ajax.js';
 
 console.log("called");
 
@@ -18,5 +18,7 @@ if (document.body.dataset.page === 'project-page') {
 }  else if (document.body.dataset.page === 'about-page') {
   textAnimation();
 } else if (document.body.dataset.page === 'contact-page') {
-  thanksPage();
+
+  ajaxData();
 };
+
