@@ -1,6 +1,8 @@
- //show and hide
+//show and hide
+ 
+export function show() {
 
-  const allButton = document.querySelector('#all');
+    const allButton = document.querySelector('#all');
     const codeButton = document.querySelector('#code');
     const designButton = document.querySelector('#design');
 
@@ -37,3 +39,4 @@
     allButton.addEventListener('click', showAllProjects);
     codeButton.addEventListener('click', showCodeProjects);
     designButton.addEventListener('click', showDesignProjects);
+}

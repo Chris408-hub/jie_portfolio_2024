@@ -1,7 +1,7 @@
 
 // videoControls.js
 
-function videoControls() {
+export function videoControls() {
   const videoPlayer = document.querySelector('.video-player');
   const controls = document.querySelector('.controls'); 
   const video = document.querySelector('#myVideo');
@@ -37,9 +37,3 @@ function videoControls() {
   });
 
 }
-
-
-
-
-
-videoControls();
