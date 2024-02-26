@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+
+// body {
+//     font-family: v.$body-font-family;
+//     background-color: v.$primary-color;
+//     color: #fff;
+
+    
+// }
+
+ul li{
+    list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  // color: black;
+}
+
+// h2{
+//   font-size: 40px;
+// }
+
+// h2, p{
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }
