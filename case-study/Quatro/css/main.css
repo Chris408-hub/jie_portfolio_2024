@@ -1,0 +1,581 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Header
+    3.  Main Hero Image
+    4.  Video
+    5.  Gallery
+    6.  Dry Tea
+    7.  Find More
+    8.  Footer
+    9.  Tablet Queries
+    10. Desktop Queries 
+ */
+
+
+ /* 1. ---General Styles--- */
+ 
+body {
+   font-family: 'Mukta Mahee', sans-serif;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+/* 2. ---Header--- */
+
+#sticky-nav-con {
+   background-color: #BAE0DD;
+}
+
+#logo{
+   /* height: 3.75rem; */
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+}
+
+#main-nav button {
+   width: 3.125rem;
+   height: 2.1875rem;
+   background: url(../images/hamburger.svg) no-repeat center;
+   margin-top: 2.1875rem;
+   margin-bottom: 1.5625rem;
+   transition: all .5s ease;
+   border: 0;
+}
+
+#main-nav button.expanded {
+   transform: rotate(90deg);
+   /* z-index: 3;
+   position: absolute; */
+}
+
+#burger-con {
+   margin-top: 2.5rem;
+   margin-bottom: 1.25rem;
+   display:none;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+   /* height: 100vh;
+   width: 100vw;
+   background:rgba() ;
+   z-index:2;
+   position:absolutely;
+   top:0;
+   left:0 */
+}
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin-left: -9.375rem;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 0.625rem;
+   width: 8.3rem;
+   font-size:1.25rem;
+   text-align: center;
+   color: #fff;
+}
+
+/* #main-nav ul li:first-child {
+   color:#C8B0D0;
+}  */
+
+#main-nav ul li a:hover {
+   color:#C8B0D0;
+}
+
+#account-icon {
+   display: none;
+}
+
+
+/* 3. ---Main Hero Image--- */
+
+#hero img{
+   grid-column: 1/-1;
+   justify-self: center;
+}
+
+/* 4. ---Video--- */
+
+#video {
+   background-color:#F4E1C2;
+   color:#A0A0A0;
+   width: 100%;
+   /* background:url('images/index/badge_bg.jpg')  no-repeat; */
+   margin-top: -0.625rem;
+}
+
+#video h2 {
+   margin-top: 2.5rem;
+   font-size: 0.875rem;
+   font-weight: 400;
+}
+
+#video h3 {
+   font-size: 0.75rem;
+   font-weight: 300;
+
+}
+
+#video p {
+   font-size: 0.625rem;
+   margin-top: 1.25rem;
+   margin-bottom: 1.875rem;
+   font-weight: 200;
+   line-height: 1.25rem;
+
+}
+
+#hidden-mobile {
+   display: none;
+   margin-bottom: 1.25rem;
+}
+
+/* #video-con {
+
+} */
+
+
+
+/* 5. --- Gallery --- */
+
+#gallery {
+   background-color: #BAE0DD;
+   color: #fff;
+
+}
+
+/* #gallery .product {
+  position: relative;
+} */
+
+/* 
+
+#gallery .product image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#gallery .product image:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.product:hover .product image:last-child {
+  opacity: 1;
+} */
+
+#gallery .product {
+   height: 28.75rem;
+   display: flex;
+   flex-direction: column;  
+   align-items: center;
+   justify-content:end;
+   overflow: hidden;  
+
+} 
+
+#gallery .product .flavor {
+   height: 60%;
+   max-width: 180%;
+   margin-left: -6.25rem;
+}
+
+
+
+/* #gallery .product1 .flavor:target {
+ width: 100%;
+  height: 100%;
+  background: url('../images/change-bg/orange-bg.png') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+} */
+
+/* #gallery .product .flavor:hover  .fruit{
+   display: block;
+} */
+
+/* #gallery .fruit {
+   z-index:555;
+} */
+
+#gallery .product{
+   position: relative;
+}
+
+
+#gallery .product ul {
+   position: absolute;
+   top:25%;
+   width: 100%;
+   height: 40%;   
+   background-color: rgba(186, 224, 221, 0.9);
+   margin-top: 0.9375rem;
+   margin-bottom: 1.5625rem;
+   z-index: 555;
+
+}
+#gallery .product ul li{
+   color: #fff;
+   font-size: 0.675rem;
+   line-height: 1.625rem;
+
+}
+
+#gallery p {
+   margin-top: 0.9375rem;
+   
+}
+
+#gallery .product1 {
+   background-color: #EEC9B7;
+
+}
+
+#gallery .product2 {
+   background-color: #C8AFD0;
+}
+
+#gallery .product3 {
+   background-color: #B7C88B;
+}
+
+#gallery button {
+   width: 8.125rem;
+   height: 2.9375rem;
+   border: none;
+   border-radius: 1.25rem;
+   color: #fff;
+   font-size: 1rem;
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+
+}
+
+#gallery .buy-it1 {
+   background-color: #B7C88B;
+}
+
+#gallery .buy-it2 {
+   background-color: #EEC9B7;
+}
+
+#gallery .buy-it3 {
+   background-color: #C8AFD0;
+}
+
+#gallery .buy-btn:hover {
+   background-color: #BAE0DD;
+} 
+
+
+/* 6. ---Dry Tea--- */
+
+#dry-tea {
+   background-color: #C8AFD0;
+   color: #fff;
+}
+
+#dry-tea #try {
+   font-size: 1.875rem;
+   color: #F4E1C2;
+}
+
+#dry-tea #hidden-mobile-img {
+   display: none;
+}
+
+#dry-tea h2 {
+   font-size: 1rem;
+   margin-top:1.875rem;
+   margin-bottom: 1.25rem;
+}
+
+#dry-tea p {
+   font-size: 0.875rem;
+   margin-bottom:1.875rem;
+}
+
+#dry-tea #try-images {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 1.875rem;
+   margin-bottom: 3.125rem;
+
+}
+
+/* 7. ---Find More--- */
+
+#find-con {
+   background-color: #EEC9B7;
+   color:#fff;
+}
+
+#find-con h2 {
+   font-size: 1rem;
+   margin-top:1.875rem;
+   margin-bottom: 1.25rem;
+}
+
+#find-con p {
+   font-size: 0.875rem;
+   margin-bottom:1.875rem;
+}
+
+#find-con #find {
+   font-size: 1.875rem;
+   color: #C8AFD0;
+
+}
+
+
+#find-con #find-images .row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1.25rem 0;
+}
+
+
+.store {
+  flex: 0 0 30%;
+  max-width: 50%;
+  padding: 0 0.625rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  
+
+}
+
+
+#find-con #find-images .hidden-mob {
+   display: none;
+}
+
+/* 8. ---Footer--- */
+
+#footer {
+   background-color: #BAE0DD;
+   color: #fff;
+}
+
+#footer #footer-logo{
+   margin-top: 1.875rem;
+   margin-bottom: 1.875rem;
+}
+
+#footer #email-con {
+   height: 1.875rem;
+}
+
+#footer #email-con input {
+   width: 16.25rem;
+   height: 100%;
+   margin-top: 0.9375rem;
+   border-radius: 1.25rem;
+   float: left;
+
+
+}
+
+#footer #footer-btn {
+   border-radius: 1.25rem;
+   height: 100%;
+   background-color: #C8B0D0;
+   border: 0.125rem solid #B7C88B;
+   color: #fff;
+   margin-top: 0.9375rem;
+   margin-left: -3.75rem;
+
+}
+
+#footer #footer-btn:hover {
+   background-color: #B7C88B;
+   border: 0.125rem solid #C8B0D0;
+
+}
+
+#footer #footer-nav {
+   margin-top: 1.25rem;
+
+}
+
+#footer #footer-nav li {
+   padding-top: 0.9375rem;
+}
+
+#footer #footer-nav ul li a {
+   color: #fff;
+
+}
+
+#footer #footer-nav ul li a:hover {
+   color: #C8B0D0;
+}
+
+#footer #social-con ul{
+   display: flex;
+   justify-content: space-evenly;
+   margin-left: -1.875rem;
+}
+
+#social-con ul li img{
+   width: 2.1875rem;
+   height: 2.1875rem;
+
+}
+
+#footer #copyright {
+   color: #fff;
+   margin-bottom: 2.5rem;
+}
+
+/* 9. ---Tablet Queries--- */
+
+@media screen and (min-width : 768px){
+
+   #button {
+      display: none;
+   }
+
+   #burger-con {
+      display: block;
+   }
+
+
+   #account-icon {
+      display: block;
+      margin-top: 2.1875rem;
+   }
+
+   #main-nav ul {
+      display: flex;
+      justify-content: space-around;
+   }
+
+
+   #video h2{
+      font-size: 1.25rem;
+   }
+   #video h3{
+      font-size: 1rem;
+   }
+   #video p{
+      font-size: 0.875rem;
+      line-height: 1.875rem;
+   }
+
+   #dry-tea #hidden-mobile-img {
+      display: block;
+   }
+
+   #gallery {
+      height: 32.0625rem;
+   }
+
+   #gallery .product{
+      height: 23.75rem;
+      width: 14.5rem;
+      display: flex;
+      flex-direction: column;  
+      align-items: center;
+      justify-content: end;
+      /* overflow: visible; */
+      margin-top: 3.125rem;
+   
+   }
+
+   #gallery button {
+      width: 6.625rem;
+      height: 2.25rem;
+      border: none;
+      border-radius: 1.25rem;
+      color: #fff;
+      font-size: 1rem;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+
+   }
+
+   #find-con #find-images .hidden-mob {
+      display: block;
+   }
+
+   #find-con #find-images .row {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 1.25rem 0;
+   }
+
+
+   .store {
+      flex: 0 0 10%;
+      max-width: 20%;
+      padding: 0 0.625rem;
+      box-sizing: border-box;
+      max-width: 100%;
+   }
+
+
+   #find-con #find-images .hidden-mob {
+      display: block;
+   }
+
+   #footer #copyright {
+   margin-top: -3.125rem;
+   }
+
+}
+   
+
+/* 10. ---Desktop Queries--- */
+
+@media screen and (min-width : 1200px){
+
+
+   #gallery {
+      height: 43.75rem;
+
+   }
+   
+   #gallery .product{
+      height: 34.375rem;
+      width: 23.125rem;
+   }
+
+   #footer #email-con {
+   height: 2.8125rem;
+   }
+
+   #footer #email-con input {
+   width: 21.875rem;
+   }
+
+
+}

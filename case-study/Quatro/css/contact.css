@@ -1,0 +1,353 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Header
+    3.  Sign in,Sign up
+    4.  Footer
+    5.  Tablet Queries
+    6.  Desktop Queries 
+ */
+
+
+ /* 1. ---General Styles--- */
+ 
+body {
+   font-family: 'Mukta Mahee', sans-serif;}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+/* 2. ---Header--- */
+
+#sticky-nav-con {
+   background-color: #BAE0DD;
+}
+
+#logo{
+   /* height: 3.75rem; */
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+}
+
+#main-nav button {
+   width: 3.125rem;
+   height: 2.1875rem;
+   background: url(../images/hamburger.svg) no-repeat center;
+   margin-top: 2.1875rem;
+   margin-bottom: 1.5625rem;
+   transition: all .5s ease;
+   border: 0;
+}
+
+#main-nav button.expanded {
+   transform: rotate(90deg);
+}
+
+#burger-con {
+   margin-top: 2.5rem;
+   margin-bottom: 1.25rem;
+   display:none;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+}
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin-left: -9.375rem;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 0.625rem;
+   width: 6.25rem;
+   text-align: center;
+   color: #fff;
+}
+
+/* #main-nav ul li:first-child {
+   color:#C8B0D0;
+}  */
+
+#main-nav ul li a:hover {
+   color:#C8B0D0;
+}
+
+#account-icon {
+   display: none;
+}
+
+/* 3. ---Sign in, Sign up--- */
+
+form {
+   margin: 0 auto;
+}
+
+#sign-in {
+   background: url(../images/image-bg.png) no-repeat #C8AFD0;
+   color: #fff;
+}
+
+#sign-in h2{
+   font-size: 1.5rem;
+   margin-top: 4.375rem;
+   margin-left:0.625rem
+}
+
+#sign-in h3{
+   font-size: 0.75rem;
+   margin-left: 6.9375rem;
+   margin-top: -1.8125rem;
+   margin-bottom: 3.125rem;
+}
+
+#sign-in h3 a{
+   color: #BAE0DD;
+}
+
+#sign-in label, #sign-up label {
+   font-size: 1.25rem;
+   margin-top:3.125rem;
+}
+
+#sign-in input, #sign-up input{
+   width: 16.25rem;
+   height: 3.125rem;
+   border-radius: 3.125rem;
+   margin-bottom: 1.875rem;
+}
+
+#sign-in p {
+   font-size: 0.75rem;
+   color: #fff;
+   margin-top: -1.25rem;
+}
+
+#sign-in input[name="submit"], #sign-up input[name="create"] {
+   width: 8.125rem;
+   height: 3.125rem;
+   font-size: 0.9375rem;
+   background-color: #B7C88B;
+   color: #fff;
+   margin-top: 5rem;
+   margin-left: 5rem;
+   margin-bottom: 5rem;
+}
+
+#sign-in input[name="submit"]:hover,#sign-up input[name="create"]:hover {
+   background-color: #BAE0DD;
+
+}
+
+#sign-up {
+   background-color: #B7C88B;
+   color: #fff;
+}
+
+#sign-up form {
+   margin-top: 3.125rem;
+}
+
+#sign-up p {
+   font-size: 0.9375rem;
+   color: #fff;
+   margin: -4.125rem 0 5rem 7.5rem;
+}
+
+#sign-up input[name="create"] {
+   background-color: #C8AFD0;
+
+}
+
+/* 4. ---Footer--- */
+
+#footer {
+   background-color: #BAE0DD;
+   color: #fff;
+}
+
+#footer #footer-logo{
+   margin-top: 1.875rem;
+   margin-bottom: 1.875rem;
+}
+
+#footer #email-con {
+   height: 1.875rem;
+}
+
+#footer #email-con input {
+   width: 16.25rem;
+   height: 100%;
+   margin-top: 0.9375rem;
+   border-radius: 1.25rem;
+   float: left;
+}
+
+#footer #footer-btn {
+   border-radius: 1.25rem;
+   height: 100%;
+   background-color: #C8B0D0;
+   border: 0.125rem solid #B7C88B;
+   color: #fff;
+   margin-top: 0.9375rem;
+   margin-left: -3.75rem;
+
+}
+
+#footer #footer-btn:hover {
+   background-color: #B7C88B;
+   border: 0.125rem solid #C8B0D0;
+
+}
+
+#footer #footer-nav {
+   margin-top: 1.25rem;
+
+}
+
+#footer #footer-nav li {
+   padding-top: 0.9375rem;
+}
+
+#footer #footer-nav ul li a {
+   color: #fff;
+
+}
+
+#footer #footer-nav ul li a:hover {
+   color: #C8B0D0;
+}
+
+#footer #social-con ul{
+   display: flex;
+   justify-content: space-evenly;
+   margin-left: -1.875rem;
+}
+
+#social-con ul li img{
+   width: 2.1875rem;
+   height: 2.1875rem;
+
+}
+
+#footer #copyright {
+   color: #fff;
+   margin-bottom: 2.5rem;
+}
+
+/* 5. ---Tablet Queries--- */
+
+@media screen and (min-width : 768px){
+
+   #button {
+      display: none;
+   }
+
+   #burger-con {
+      display: block;
+   }
+
+   #account-icon {
+      display: block;
+      margin-top: 2.1875rem;
+   }
+
+   #main-nav ul {
+      display: flex;
+      justify-content: space-around;
+   }
+
+   #sign-in h2 {
+      font-size: 4.375rem;
+      margin-top: 5.625rem;
+      margin-left:0.625rem
+   }
+
+   #sign-in h3 {
+      font-size: 1.6875rem;
+      color: #BAE0DD;
+      margin-top: 3.125rem;
+      margin-left: 0.625rem;
+      margin-top: 8.75rem;
+   }
+   
+   #sign-in label, #sign-up label{
+      font-size: 1.875rem;
+   }
+
+   #sign-in input, #sign-up input{
+      width: 34.375rem;
+      height: 5rem;
+   }
+
+   #sign-in p {
+      font-size: 0.875rem;
+   }
+
+   #sign-in input[name="submit"], #sign-up input[name="create"]{
+      width: 14.5rem;
+      height: 5rem;
+      font-size: 1.875rem;
+      margin-left: 12.5rem;
+   }
+
+   #sign-up p {
+      font-size: 1.5625rem;
+      margin-left: 17.5rem;
+   }
+
+   #footer #copyright {
+      margin-top: -3.125rem;
+   }
+
+}
+   
+
+/* 6. ---Desktop Queries--- */
+
+@media screen and (min-width : 1200px){
+
+   #sign-in input, #sign-up input {
+   width: 35.625rem;
+   height: 5rem;
+   }
+
+   #sign-in p {
+      font-size: 1.25rem;
+   }
+
+   #sign-in input[name="submit"],#sign-up input[name="create"] {
+   width: 23.125rem;
+   height: 6.25rem;
+   margin-left: 6.25rem;
+   }
+
+   #sign-up p {
+      font-size: 1.875rem;
+      margin-left: 14.375rem;
+   }
+
+   #footer #email-con {
+   height: 2.8125rem;
+   }
+
+   #footer #email-con input {
+   width: 21.875rem;
+   }
+
+}

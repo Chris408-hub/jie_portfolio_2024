@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Quatro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Content will go here -->
+    <h1 class="hidden">Quatro</h1>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <div id="logo" class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3">
+                <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            </div>
+            <nav class="col-start-4 col-end-4 m-col-start-5 m-col-end-11" id="main-nav">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul id="burger-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="account-icon" class="m-col-start-12 m-col-end-12">
+                <a><img src="images/account.svg" alt="logo"></a>
+            </div>
+        </header>
+    </div>
+
+    <section id="hero" class="full-width-grid-con">
+        <h2 class="hidden">We are the Quatro</h2>
+        <!-- <img src="images/hero.jpg" alt="hero-image"> -->
+        <img sizes="100vw" 
+            srcset="images/hero_j8xpht_c_scale,w_320.jpg 320w,
+            images/hero_j8xpht_c_scale,w_968.jpg 968w,
+            images/hero_j8xpht_c_scale,w_1280.jpg 1280w"
+            src="images/hero_j8xpht_c_scale,w_1280.jpg"
+            alt="hero image">
+
+    </section>
+
+    <section id="video" class="grid-con">
+        <!-- <h2 class="hidden"> video of Quatro</h2> -->
+        <!-- <div id="video-text" class="grid-con"> -->
+        <h2 class="col-start-2 col-end-4 m-col-start-5 m-col-end-10 l-col-start-6 l-col-end-10"> Welcome to Quatro</h2>
+        <h3 class="col-start-2 col-end-4 m-col-start-5 m-col-end-10 l-col-start-6 l-col-end-10"> where nature meets taste. </h3>
+        <p class="col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">Our organic fruit juices are made with the highest quality ingredients, carefully selected from certified organic farms.<br> 
+        <span id="hidden-mobile">We believe in the power of nature to nourish and energize our bodies,  and we strive to bring you the freshest, most flavorful fruits in every bottle.</span></p>
+        <!-- </div> -->
+        <div class="col-span-full m-col-start-4 m-col-end-10" id="video-con">
+            <video src="video/quatro.mp4" controls></video>
+        </div>
+            
+        <div id="badge" class="col-span-full m-col-start-4 m-col-end-9">
+            <img src="images/Badge.png" alt="organic badge">
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="hidden">Product Introduction</h2>
+            <div class="grid-con">
+                <div class="product product1 col-span-full m-col-start-1 m-col-end-4">
+                    <!-- <img data-juice="orange" class="flavor orange" src="images/orange2.jpg" alt="orange juice"> -->
+                    <img data-juice="orange" class="flavor orange"
+                        sizes="(max-width: 1920px) 100vw, 1920px"
+                        srcset="
+                        images/orange2_ma3jd0_c_scale,w_320.jpg 320w,
+                        images/orange2_ma3jd0_c_scale,w_1920.jpg 1920w"
+                        src="images/orange2_ma3jd0_c_scale,w_1920.jpg"
+                        alt="orange juice">                    
+                    <!-- <img class="flavor orange" 
+                        sizes="100vw"
+                        srcset="
+                        images/orange_byxcqp_c_scale,w_320.jpg 320w,
+                        images/orange_byxcqp_c_scale,w_1280.jpg 1280w"
+                        src="images/orange_byxcqp_c_scale,w_1280.jpg"
+                        alt="orange"> -->
+                    <!-- <img class="hidden fruit orange" src="images/change-bg/orange-bg.png" alt=""> -->
+                    <!-- <img class="hidden fruit orange"
+                        sizes="100vw"
+                        srcset="
+                        images/orange-bg_me5ide_c_scale,w_320.png 320w,
+                        images/orange-bg_me5ide_c_scale,w_498.png 498w,
+                        images/orange-bg_me5ide_c_scale,w_635.png 635w,
+                        images/orange-bg_me5ide_c_scale,w_770.png 770w,
+                        images/orange-bg_me5ide_c_scale,w_870.png 870w,
+                        images/orange-bg_me5ide_c_scale,w_968.png 968w,
+                        images/orange-bg_me5ide_c_scale,w_1053.png 1053w,
+                        images/orange-bg_me5ide_c_scale,w_1137.png 1137w,
+                        images/orange-bg_me5ide_c_scale,w_1213.png 1213w,
+                        images/orange-bg_me5ide_c_scale,w_1280.png 1280w"
+                        src="images/orange-bg_me5ide_c_scale,w_1280.png"
+                        alt="orange tree"> -->
+                    <!-- <div class="product-info"></div> -->
+                <p>Orange 250ml</p>
+                <button class="buy-btn buy-it1">Buy it</button>
+                </div>
+                <div class="product product2 col-span-full m-col-start-5 m-col-end-8">
+                    <!-- <img data-juice="strawberry" class="flavor strawberry" src="images/strawberry2.jpg" alt="strawberry juice"> -->
+                    <img data-juice="strawberry" class="flavor strawberry"
+                        sizes="(max-width: 1920px) 100vw, 1920px"
+                        srcset="
+                        images/strawberry2_cxrkeh_c_scale,w_320.jpg 320w,
+                        images/strawberry2_cxrkeh_c_scale,w_1920.jpg 1920w"
+                        src="images/strawberry2_cxrkeh_c_scale,w_1920.jpg"
+                        alt="strawberry juice">
+                    <!-- <img class="flavor strawberry"
+                        sizes="100vw"
+                        srcset="
+                        images/strawberry_mwv0gf_c_scale,w_320.jpg 320w,
+                        images/strawberry_mwv0gf_c_scale,w_1280.jpg 1280w"
+                        src="images/strawberry_mwv0gf_c_scale,w_1280.jpg"
+                        alt="strawberry"> -->
+                    <!-- <img class="hidden fruit strawberry" src="images/change-bg/strawberry-bg.png" alt=""> -->
+                    <!-- <img class="hidden fruit strawberry" 
+                        sizes="100vw"
+                        srcset="
+                        images/strawberry-bg_z5yzij_c_scale,w_320.png 320w,
+                        images/strawberry-bg_z5yzij_c_scale,w_594.png 594w,
+                        images/strawberry-bg_z5yzij_c_scale,w_802.png 802w,
+                        images/strawberry-bg_z5yzij_c_scale,w_841.png 841w,
+                        images/strawberry-bg_z5yzij_c_scale,w_843.png 843w,
+                        images/strawberry-bg_z5yzij_c_scale,w_938.png 938w,
+                        images/strawberry-bg_z5yzij_c_scale,w_1039.png 1039w,
+                        images/strawberry-bg_z5yzij_c_scale,w_1133.png 1133w,
+                        images/strawberry-bg_z5yzij_c_scale,w_1221.png 1221w,
+                        images/strawberry-bg_z5yzij_c_scale,w_1280.png 1280w"
+                        src="images/strawberry-bg_z5yzij_c_scale,w_1280.png"
+                        alt="strawberry tree"> -->
+                    <!-- <div class="product-info"></div>    -->
+                <p>Strawberry 250ml</p>
+                <button class="buy-btn buy-it2">Buy it</button>
+                </div>
+                <div class="product product3 col-span-full m-col-start-9 m-col-end-12">
+                    <!-- <img data-juice="kiwi" class="flavor kiwi" src="images/kiwi2.jpg" alt="kiwi juice"> -->
+                    <img data-juice="kiwi" class="flavor kiwi"
+                        sizes="(max-width: 1920px) 100vw, 1920px"
+                        srcset="
+                        images/kiwi2_nkqonh_c_scale,w_320.jpg 320w,
+                        images/kiwi2_nkqonh_c_scale,w_1920.jpg 1920w"
+                        src="images/kiwi2_nkqonh_c_scale,w_1920.jpg"
+                        alt="kiwi juice">
+                    <!-- <img class="flavor kiwi"
+                        sizes="100vw"
+                        srcset="
+                        images/kiwi_batlno_c_scale,w_320.jpg 320w,
+                        images/kiwi_batlno_c_scale,w_1280.jpg 1280w"
+                        src="images/kiwi_batlno_c_scale,w_1280.jpg"
+                        alt="kiwi"> -->
+                    <!-- <img class="hidden fruit kiwi" src="images/change-bg/kiwi-bg.png" alt=""> -->
+                    <!-- <img class="hidden fruit kiwi"
+                        sizes="100vw"
+                        srcset="
+                        images/kiwi-bg_qi5ypv_c_scale,w_320.png 320w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_505.png 505w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_646.png 646w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_774.png 774w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_878.png 878w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_975.png 975w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_1060.png 1060w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_1147.png 1147w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_1230.png 1230w,
+                        images/kiwi-bg_qi5ypv_c_scale,w_1280.png 1280w"
+                        src="images/kiwi-bg_qi5ypv_c_scale,w_1280.png"
+                        alt="kiwi tree"> -->
+                    <!-- <div class="product-info"></div> -->
+                <p>Kiwi 250ml</p>
+                <button class="buy-btn buy-it3">Buy it</button>
+                </div>
+            </div>
+
+    </section>
+
+    <section id="dry-tea" class="grid-con">
+        <h2 class="col-span-full m-col-start-5 m-col-end-9"><span id="try">TRY</span>  Dried Fruit Tea Bag</h2>
+        <!-- <div id="try-text"> -->
+        <p class="col-span-full m-col-start-2 m-col-end-12">Steep a bag of our Dried Fruit Tea, and savor the aroma and taste of nature's finest fruits. It's a delicious and healthy way to relax, unwind, and indulge your senses.</p>
+        <!-- </div> -->
+        <div id="try-images" class="col-span-full">
+            <a href="#">
+                <img src="images/tea1.png" alt="dry-tea1">
+            <!-- <img
+                sizes="100vw"
+                srcset="
+                images/tea1_i3rn1t_c_scale,w_170.png 170w"
+                src="images/tea1_i3rn1t_c_scale,w_170.png"
+                alt="tea"> -->
+            </a>
+            <a href="#">
+                <img src="images/tea2.png" alt="dry-tea2">
+                <!-- <img
+                sizes="100vw"
+                srcset="
+                images/tea2_bbiaga_c_scale,w_170.png 170w"
+                src="images/tea2_bbiaga_c_scale,w_170.png"
+                alt="tea"> -->
+            </a>
+            <a href="#"><img src="images/tea3.png" alt="dry-tea3"></a>
+            <a href="#"><img src="images/tea4.png" alt="dry-tea4" id="hidden-mobile-img"></a>
+            <a href="#"><img src="images/tea5.png" alt="dry-tea5"></a>
+        </div>
+    </section>
+
+    <section id="find-con" class="grid-con">
+        <h2 class="col-span-full m-col-start-5 m-col-end-10"><span id="find">Find</span> more pleasure in our store</h2>
+        <!-- <div id="find-text"> -->
+        <p class="col-span-full m-col-start-2 m-col-end-12">come and visit us at Quatro Fruit Juice Store, and discover the pure, natural goodness of our organic fruit juices. Your taste buds and body will thank you.</p>
+        <!-- </div> -->
+        <div id="find-images" class="col-span-full">
+            <div class="row">
+                <a href="#">
+                    <img class="store" src="images/store1.1.png" alt="juice1">
+                    <!-- <img
+                        sizes="100vw"
+                        srcset="
+                        images/store1.1_phvlnq_c_scale,w_270.png 270w"
+                        src="images/store1.1_phvlnq_c_scale,w_270.png"
+                        alt=""> -->
+                                    </a>
+                <a href="#"><img class="store" src="images/store1.2.png" alt="juice2"></a>
+                <a href="#"><img class="store hidden-mob" src="images/store1.3.png" alt="juice3"></a>
+                <a href="#"><img class="store hidden-mob" src="images/store1.4.png" alt="juice4"></a>
+            </div>
+            <div class="row">
+                <a href="#"><img class="store" src="images/store2.1.png" alt="store1"></a>
+                <a href="#"><img class="store" src="images/store2.2.png" alt="store2"></a>
+                <a href="#"><img class="store hidden-mob" src="images/store2.3.png" alt="store3"></a>
+                <a href="#"><img class="store hidden-mob" src="images/store2.4.png" alt="store4"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="grid-con">
+        <h2 class="hidden">Footer Email-con</h2>
+        <img id="footer-logo" class="col-start-1 col-end-3 m-col-start-2 m-col-end-4" src="images/logo.svg" alt="logo">
+        <p class="col-span-full m-col-start-2 m-col-end-6">Let's Connect BY Sign-up !</p>
+        <div id="email-con" class="col-span-full m-col-start-2 m-col-end-6">
+            <input type="email">
+            <button type="submit" id="footer-btn">Submit</button>
+        </div>
+        <nav class="col-start-2 col-end-4 m-col-start-8 m-col-end-11" id="footer-nav">
+            <h2 class="hidden">Footer Nav</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+
+        </nav>
+        <div class="col-span-full m-col-start-7 m-col-end-11" id="social-con">
+            <h2 class="hidden">Social Media Icons</h2>
+            <ul >
+                <!-- <img src="images/socialmedia.png" alt="social media icon"> -->
+                <li><a href="#"><img src="images/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/in.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/insta.svg" alt=""></a></li>
+            </ul>
+        </div> 
+        <a class="col-start-2 col-end-4 m-col-start-2 m-col-end-4" href="#"><p id="copyright" >2023copyright©Quatro</p></a>
+    </footer>
+
+
+
+
+    <!-- Link to JS file at bottom, just before closing body tag -->
+    <script src="js/main.js"></script>
+</body>
+</html>
