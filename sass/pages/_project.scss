@@ -29,8 +29,8 @@
             margin-left: 15px;
 
             font-size:15px;
-            width: 100px;
-            height: 90px;
+            width: 90px;
+            height: 50px;
             border-radius: 75px;
             background-color: a.$btn-color;
             color: #fff;
@@ -64,12 +64,12 @@
 }
 
     .gallery-image{
-        width:90%;
+        width:85%;
         height: 30vh;
-        margin: 0 25px;
-        transition: transform 0.3s ease-in-out;
+        margin: 0 30px;
+        transition: transform 0.2s ease-in-out;
         &:hover{
-        transform: scale(0.9);
+        transform: scale(0.97);
         
     }
     }
@@ -93,8 +93,8 @@
 }
 
     .gallery-image{
-        width: 600px;
-        height: 400px;
+        width: 350px;
+        height: 220px;
 
     }
 
