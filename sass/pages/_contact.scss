@@ -116,6 +116,12 @@
             height: 35px;
         }
 
+        input, textarea{
+            padding-left: 30px;
+            padding-top:10px;
+            font-size:15px;
+        }
+
     .form-message #message-btn{
         width: 25%;
         height: 60px;
@@ -241,7 +247,11 @@
     height: 80px;
 }
 
-
+  input, textarea{
+            padding-left: 50px;
+            padding-top:20px;
+            font-size:18px;
+        }
 .form-message input, textarea,button{
     width: 65%;
     height: 45px;

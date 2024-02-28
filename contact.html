@@ -8,12 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <script defer src="js/hamburger.js"></script>
-    <script defer src="js/lightbox.js"></script>
+    <script type="module" defer src="js/main.js"></script>
     
 </head>
 
-<body>
+<body data-page="contact-page">
     <header id="main-header">
         <div id="logo">
             <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
@@ -58,29 +57,30 @@
 
     </section>
     
-    
-   
-    <form id="send-message" action="contact.php" method="post">
-    <h2><img src="images/message.svg" alt="leave me a message icon">Leave Me A Message</h2>
-            <div class="form-message">
-            <input type="text" id="fname" name="fname" placeholder="     First Name*" required>
+
+    <form id="send-message">
+        <h2><img src="images/message.svg" alt="leave me a message icon">Leave Me A Message</h2>
+        <div class="form-message">
+            <input type="text" id="fname" name="firstname" placeholder="     First Name*" required>
             </div>
 
             <div class="form-message">
-            <input type="text" id="lname" name="lname" placeholder="     Last Name*" required>
+            <input type="text" id="lname" name="lastname" placeholder="     Last Name*" required>
             </div>
 
             <div class="form-message">
             <input type="email" id="email" name="email" placeholder="     Email*" required>
             </div>
             <div class="form-message">
-            <textarea id="comments" name="comments" rows="5" placeholder="      LEAVE ME A Message*" required></textarea>
+            <textarea id="messages" name="messages" rows="5" placeholder="      LEAVE ME A Message*" required></textarea>
             </div>
             <div class="form-message">
             <button type="submit" id="message-btn">Send</button>
-            </div>
+
+        </div>
+        <div id="feedback"></div>
             
-        </form>
+    </form>
 
         <div id="thanks-light-box">
             <button id="close-btn"><img src="images/close-thanks.svg" alt="close button"></button>

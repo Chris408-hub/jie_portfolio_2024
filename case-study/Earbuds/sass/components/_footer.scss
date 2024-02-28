@@ -1,0 +1,147 @@
+@use '../abstracts/variables' as v;
+
+#footer{
+    background-color: v.$primary-color;
+    color: #fff;
+    margin-top: 10px;
+    position: relative;
+    height: 150px;
+    bottom: -1467px;
+
+
+    #sign-up{
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: -35%;
+        left:0;
+        right: 0;
+
+        border-radius:200px;
+        background-color: v.$primary-color;
+        border: 1px solid v.$second-color;
+
+        p{
+            margin-top: 25px;
+            margin-left: 15%;
+        }
+        #email{
+            width: 150px;
+            height: 20px;
+            margin-left: 15%;
+            display: flex;
+            align-items: center;;
+            // border: 1px solid v.$second-color;
+
+
+            input{
+                width: 80%;
+                height: 100%;
+                border-radius: 200px;
+
+            }
+            #footer-btn{
+                font-size: 10px;
+                width: 40%;
+                height: 100%;
+                border-radius: 200px;
+                margin-left: -15%;
+                background-color: v.$second-color;
+                color: #fff;
+                border: 1px solid v.$primary-color;
+                &:hover{
+                background-color: v.$primary-color;
+                border: 1px solid v.$second-color;
+                }
+            }
+        }
+
+    }
+
+    
+
+    #footer-bottom{
+      background-color: v.$primary-color;
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+        p{
+            order: 1;
+            color: #fff;
+            font-size: 8px;
+        }
+        #social-con ul{
+            order: 2;
+            display: flex;
+            justify-content:space-around;
+        }
+
+    }
+
+}
+
+@media screen and (min-width:768px){
+    #footer{
+        height: 300px;
+        #sign-up{
+            width: 500px;
+            height: 150px;
+            top: -20%;
+            left:0;
+            right: 0;
+                p{
+                    margin-left: -10%;
+                }
+
+                #email{
+                    width: 370px;
+                    height: 50px;
+                    margin-left: 0;
+
+
+                    input{
+                        width: 70%;
+
+                    }
+                    #footer-btn{
+                        width: 30%;
+                    }
+                }
+        }
+        #footer-bottom p{
+            font-size: 20px;
+        }
+
+
+
+    }
+}
+
+
+@media screen and (min-width:1920px){
+    #footer{
+
+        height: 500px;  
+
+        #sign-up{
+
+            width: 900px;
+            height: 165px;
+
+            #email{
+                width: 370px;
+                height: 50px;
+            }
+        }
+
+     }
+
+
+
+}
+

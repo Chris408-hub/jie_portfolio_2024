@@ -1,0 +1,435 @@
+h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+model-viewer {
+  width: auto;
+  max-width: 1920px;
+  height: 1000px;
+  background-color: #efefef;
+  margin: 0 auto;
+}
+
+.Hotspot {
+  background: url(../images/hotspot.svg) center no-repeat;
+  border: 0px;
+  width: 35px;
+  height: 35px;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+.Hotspot:not([data-visible]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.HotspotAnnotation {
+  visibility: hidden;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family:Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  left: calc(100% + 1em);
+  max-width: 300px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
+  text-align: left;
+}
+
+.HotspotAnnotation p {
+  color: #333;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.HotspotAnnotation h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* AR Rules */
+@keyframes circle {
+  from {
+    transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+@keyframes elongate {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+model-viewer > #ar-prompt {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  animation: elongate 2s infinite ease-in-out alternate;
+  display: none;
+}
+
+model-viewer[ar-status=session-started] > #ar-prompt {
+  display: block;
+}
+
+model-viewer > #ar-prompt > img {
+  animation: circle 4s linear infinite;
+}
+
+#main-header {
+  background-color: #3E2259;
+}
+#main-header #logo {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#main-header #main-nav button {
+  width: 55px;
+  height: 40px;
+  background: url(../images/hamburger.svg) no-repeat center;
+  margin-top: 40px;
+  transition: all 0.5s ease;
+  border: 0;
+}
+#main-header #main-nav button.expanded {
+  transform: rotate(90deg);
+}
+#main-header #burger-con {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  display: none;
+}
+#main-header #burger-con.slide-toggle {
+  display: block;
+}
+#main-header #main-nav ul {
+  padding: 0;
+}
+#main-header #main-nav ul li a {
+  display: block;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  #main-header #main-nav button {
+    display: none;
+  }
+  #main-header #burger-con {
+    display: block;
+  }
+  #main-header #main-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #main-header #main-nav ul li a {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #main-header #main-nav ul li a {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+  }
+}
+#hero img {
+  width: 1920px;
+}
+
+#vertical-animation {
+  margin-top: 20px;
+}
+#vertical-animation #explode-view {
+  max-width: 100%;
+}
+
+#hot-spot h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+#hot-spot img {
+  width: 200px;
+  height: 150px;
+}
+#hot-spot #model .Hotspot {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 10px;
+}
+#hot-spot #features {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+#hot-spot #features .vertical-line {
+  width: 2px;
+  height: 100px;
+  background-color: #000;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#outerShell {
+  display: none;
+}
+
+#x-ray-intro {
+  margin-top: 30px;
+}
+#x-ray-intro h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#x-ray-intro p {
+  display: none;
+}
+#x-ray-intro #battery {
+  margin-top: 30px;
+}
+#x-ray-intro img {
+  margin: 40px auto;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+    border: solid 1px #3E2259;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 720px;
+  }
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+  .image-right {
+    background: url(../images/x-ray-bottom.png) no-repeat;
+    background-size: auto;
+  }
+  .image-left {
+    background: url(../images/x-ray-top.png) no-repeat;
+    background-size: auto;
+    width: 50%;
+  }
+  .image-drag {
+    background-color: #3E2259;
+    left: 50%;
+    width: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #x-ray-intro p {
+    display: block;
+    font-size: 18px;
+  }
+}
+#animation {
+  margin-top: -30px;
+  display: flex;
+}
+#animation #text {
+  margin-left: 10%;
+  font-size: 10px;
+}
+#animation p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  #animation {
+    margin-top: 100px;
+  }
+  #animation #text {
+    margin-left: 15%;
+    font-size: 20px;
+  }
+  #animation p {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #animation #text {
+    margin-left: 15%;
+    font-size: 30px;
+  }
+  #animation p {
+    font-size: 40px;
+  }
+}
+#footer {
+  background-color: #3E2259;
+  color: #fff;
+  margin-top: 10px;
+  position: relative;
+  height: 150px;
+  bottom: -1467px;
+}
+#footer #sign-up {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: -35%;
+  left: 0;
+  right: 0;
+  border-radius: 200px;
+  background-color: #3E2259;
+  border: 1px solid #70468C;
+}
+#footer #sign-up p {
+  margin-top: 25px;
+  margin-left: 15%;
+}
+#footer #sign-up #email {
+  width: 150px;
+  height: 20px;
+  margin-left: 15%;
+  display: flex;
+  align-items: center;
+}
+#footer #sign-up #email input {
+  width: 80%;
+  height: 100%;
+  border-radius: 200px;
+}
+#footer #sign-up #email #footer-btn {
+  font-size: 10px;
+  width: 40%;
+  height: 100%;
+  border-radius: 200px;
+  margin-left: -15%;
+  background-color: #70468C;
+  color: #fff;
+  border: 1px solid #3E2259;
+}
+#footer #sign-up #email #footer-btn:hover {
+  background-color: #3E2259;
+  border: 1px solid #70468C;
+}
+#footer #footer-bottom {
+  background-color: #3E2259;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer #footer-bottom p {
+  order: 1;
+  color: #fff;
+  font-size: 8px;
+}
+#footer #footer-bottom #social-con ul {
+  order: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  #footer {
+    height: 300px;
+  }
+  #footer #sign-up {
+    width: 500px;
+    height: 150px;
+    top: -20%;
+    left: 0;
+    right: 0;
+  }
+  #footer #sign-up p {
+    margin-left: -10%;
+  }
+  #footer #sign-up #email {
+    width: 370px;
+    height: 50px;
+    margin-left: 0;
+  }
+  #footer #sign-up #email input {
+    width: 70%;
+  }
+  #footer #sign-up #email #footer-btn {
+    width: 30%;
+  }
+  #footer #footer-bottom p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #footer {
+    height: 500px;
+  }
+  #footer #sign-up {
+    width: 900px;
+    height: 165px;
+  }
+  #footer #sign-up #email {
+    width: 370px;
+    height: 50px;
+  }
+}
