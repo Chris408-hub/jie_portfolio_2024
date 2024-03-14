@@ -50,8 +50,10 @@
 }
 
 .gallery-box {
-    background-color: rgba(13, 67, 115, 0.5);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    border: 3px solid a.$btn-hover;
+
+    // background-color: rgba(13, 67, 115, 0.5);
+    // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px 0;
     padding: 20px;
 

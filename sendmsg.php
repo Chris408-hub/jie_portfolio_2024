@@ -10,6 +10,14 @@
     $connection = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
     $errors = array();
 
+
+    //check Honeypot Fields 
+    $honeypot = $_POST['honeypot'];
+        if (!empty($honeypot)) {
+            echo json_encode(array("error" => "Honeypot field should be empty."));
+            exit;
+        }
+
     $fname = mysqli_real_escape_string($connection, $_POST['firstname']);
     if ($fname == NULL) {
     $errors[] = "First name field is empty.";

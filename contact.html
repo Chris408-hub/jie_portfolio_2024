@@ -40,10 +40,10 @@
 
     <section id="find">
 
-        <div id="send-email" class="find-me email">
+        <!-- <div id="send-email" class="find-me email">
             <p id="email-placeholder"><img src="images/Icon material-email.svg" alt="email icon">Email</p>
             <a href="mailto:yjie9093@gmail.com"><p id="send">Send</p></a>
-        </div>
+        </div> -->
     
 
 
@@ -74,10 +74,15 @@
             <div class="form-message">
             <textarea id="messages" name="messages" rows="5" placeholder="      LEAVE ME A Message*" required></textarea>
             </div>
+            <!-- Honeypot Fields -->
+            <div style="display:none">
+                    <input type="text" name="honeypot" id="honeypot" placeholder="Leave this field empty" autocomplete="off">
+            </div>
+    
             <div class="form-message">
-            <button type="submit" id="message-btn">Send</button>
+                <button type="submit" id="message-btn">Send</button>
 
-        </div>
+            </div>
         <div id="feedback"></div>
             
     </form>

@@ -1,11 +1,11 @@
-// aboutMe-Page.js
+
 //adding greenSock SplitText
     
 
 export function textAnimation() {
 
   gsap.registerPlugin(SplitText);
-  const titles = document.querySelectorAll('span');
+  const titles = document.querySelectorAll('#web');
   titles.forEach(title => {
 
     const split = new SplitText(title, { type: 'chars' });
