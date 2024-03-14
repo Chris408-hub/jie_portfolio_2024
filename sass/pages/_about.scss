@@ -4,27 +4,25 @@
 #self-intro{
 
 
+        #resume{
+        color: a.$btn-hover;
+        }
+
     #tools-images{
         
         display: flex;
         justify-content: space-around;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin:50px;
     }
 
-    .pink{
-        color: a.$btn-hover;
-        letter-spacing: -200px;
-    }
-
-    
+   
 
     div{
         padding: 20px 40px;
         border-radius: 2%;
 
            p{
-        line-height: 30px;
+        line-height: 35px;
         font-size: 12px;
         margin: 20px 0px;
 
@@ -44,33 +42,21 @@
 
 
 
-    #work{
-        background-color: rgba(13, 67, 115, 0.5);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        #education{
-    margin: 0 auto;
-  }
     
-    }
 
-    #life{
-        margin-top: 30px;
-        background-color: rgba(13, 67, 115, 0.5);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
+}
 
-    #hobby-images{
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;
-    }
-
-
+#work{
+        border: 2px solid a.$btn-hover;
+        border-radius: 15px;
 }
 
 @media screen and (min-width: 768px){
    
 #self-intro{
+        margin:50px;
+        padding: 50px;
+
     div{
 
            p{

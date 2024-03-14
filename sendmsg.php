@@ -3,12 +3,20 @@
     header("Content-Type: application/json; charset=UTF-8");
 
     $db_host = 'localhost:8889';
-    $db_user = 'root';
-    $db_pass = 'root';
-    $db_name = 'portfolio_db';
+    $db_user = 'yxtgu201_general';
+    $db_pass = '=.st+x*Xnez4';
+    $db_name = 'yxtgu201_portfolio_db';
 
     $connection = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
     $errors = array();
+
+
+    //check Honeypot Fields 
+    $honeypot = $_POST['honeypot'];
+        if (!empty($honeypot)) {
+            echo json_encode(array("error" => "Honeypot field should be empty."));
+            exit;
+        }
 
     $fname = mysqli_real_escape_string($connection, $_POST['firstname']);
     if ($fname == NULL) {

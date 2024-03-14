@@ -1,6 +1,23 @@
 @use '../abstracts' as a;
 
+.case-page{
+    background-color: a.$primary-color;
+} 
 
+.left-icon{
+width: 100px;
+height: 100px;
+
+}
+.material-symbols-outlined {
+
+color: a.$btn-hover;
+}
+
+
+video{
+    max-width: 80%;
+}
 
 #project-case{
 margin-top: 100px;
