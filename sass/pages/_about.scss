@@ -4,6 +4,12 @@
 #self-intro{
 
 
+      p{
+        line-height: 35px;
+        font-size: 12px;
+        margin: 20px 0px;
+    }
+
         #resume{
         color: a.$btn-hover;
         }
@@ -15,20 +21,7 @@
         margin:50px;
     }
 
-   
-
-    div{
-        padding: 20px 40px;
-        border-radius: 2%;
-
-           p{
-        line-height: 35px;
-        font-size: 12px;
-        margin: 20px 0px;
-
-
-    }
-  h3{
+     h3{
     margin-bottom: 50px;
   }
 
@@ -37,6 +30,11 @@
             height:30px;
 
         }
+
+    div{
+        padding: 20px 40px;
+
+
 
     }
 
@@ -47,8 +45,11 @@
 }
 
 #work{
-        border: 2px solid a.$btn-hover;
-        border-radius: 15px;
+    background: url('../images/me.jpg') no-repeat right top;
+    background-size: 20%;
+    background-position-y: -10%;
+    margin: 40px;
+    border: 2px solid a.$btn-hover;
 }
 
 @media screen and (min-width: 768px){
@@ -57,13 +58,9 @@
         margin:50px;
         padding: 50px;
 
-    div{
-
-           p{
-        font-size: 15px;
-
-
-    }
+p{
+    font-size: 18px;
+    line-height: 35px;
 }
 
  }

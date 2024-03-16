@@ -11,6 +11,10 @@
         margin-left: 30px;
     }
 
+    .pink{
+        color:a.$btn-hover;
+    }
+
     .underline {
         text-decoration: underline;
         text-decoration-thickness: 2px;
@@ -34,6 +38,13 @@
     }
 
 @media screen and (min-width: 768px) {
+
+ 
+    #intro p{
+        line-height: 55px;
+        font-size: 22px;
+        margin-left: 35px;
+    }
  .self-image-hat{
     max-width: 35%;
     height: auto;

@@ -2,7 +2,7 @@
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json; charset=UTF-8");
 
-    $db_host = 'localhost:8889';
+    $db_host = 'localhost:3306';
     $db_user = 'yxtgu201_general';
     $db_pass = '=.st+x*Xnez4';
     $db_name = 'yxtgu201_portfolio_db';
