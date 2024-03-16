@@ -3,53 +3,72 @@
 
 #self-intro{
 
-
+.pink{
+    color: a.$btn-hover;
+}
       p{
         line-height: 35px;
-        font-size: 12px;
+        font-size: 15px;
         margin: 20px 0px;
     }
 
-        #resume{
+    #resume{
         color: a.$btn-hover;
-        }
-
-    #tools-images{
-        
-        display: flex;
-        justify-content: space-around;
-        margin:50px;
-    }
-
-     h3{
-    margin-bottom: 50px;
-  }
-
-        .icon{
-            width: 30px;
-            height:30px;
+        font-weight: 600;
 
         }
 
     div{
         padding: 20px 40px;
+    }
+
+}
+     .icon{
+            width: 35px;
+            height:35px;
+        }
+
+             h3{
+    margin-bottom: 50px;
+  }
 
 
-
+#work{
+    #tools-images{
+        white-space: nowrap;
     }
 
 
+   .tool-icon{
 
-    
+        display: inline-block;
+        margin:20px 10px 50px 0px;
+        }
 
 }
 
-#work{
-    background: url('../images/me.jpg') no-repeat right top;
-    background-size: 20%;
-    background-position-y: -10%;
-    margin: 40px;
+#life{
+    position: relative;
+    margin-top: 45%;
+    margin-bottom: 80px;
     border: 2px solid a.$btn-hover;
+
+    .self{
+        border:1px solid a.$btn-hover;
+        width: 65%;
+        position: absolute;
+        left:20%;
+        bottom: 85%;
+
+        img{
+            width: 100%;
+            height: 25%;
+        }
+    }
+
+    .life-intro{
+        padding: 20% 5px 5% 5px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -64,5 +83,51 @@ p{
 }
 
  }
+
+#life{
+    position: relative;
+    border: 2px solid a.$btn-hover;
+    margin-top: 20%;
+
+    .self{
+        border:1px solid a.$btn-hover;
+        width: 39%;
+        position: absolute;
+        left: 55%;
+       bottom: 75%;
+        img{
+            width: 100%;
+            height: 20%;
+        }
+    }
+
+    .life-intro{
+        padding: 5% 15px;
+    }
 }
 
+}
+
+@media screen and (min-width: 1200px){
+#life{
+    position: relative;
+    border: 2px solid a.$btn-hover;
+    margin-top: 20%;
+
+    .self{
+        border:1px solid a.$btn-hover;
+        width: 30%;
+        position: absolute;
+        left: 50%;
+       bottom: 75%;
+        img{
+            width: 100%;
+            height: 15%;
+        }
+    }
+
+    .life-intro{
+        padding: 2% 15px;
+    }
+}    
+}
