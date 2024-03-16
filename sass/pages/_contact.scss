@@ -49,7 +49,6 @@
     a{
         width: 30%;
         height: 100%;
-        border-radius: 75px;
         background-color: a.$btn-color;
         z-index: 333;
         display: flex;
@@ -71,8 +70,7 @@
    #social-media{
         width: 85%;
         margin: 40px auto;
-        border: 2px solid a.$btn-hover;
-        border-radius: 10%;
+        // border: 2px solid a.$btn-hover;
         font-size: 12px;
         img{
             width: 25px;
@@ -94,15 +92,10 @@
    }
    }
     
-    
-
-
-
-
 #send-message{
-        background-color: rgba(13, 67, 115, 0.5);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
+        // background-color: rgba(13, 67, 115, 0.5);
+        // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid a.$btn-hover;
 
         h2{
             padding-top: 50px;
@@ -136,9 +129,6 @@
 
         margin:20px 20px;
         border:2px solid a.$btn-color;
-  
-
-
     }   
 
   

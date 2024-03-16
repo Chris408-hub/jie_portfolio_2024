@@ -24,7 +24,6 @@ Adobe Creative Suite
 
 If you're interested in collaborating or have any questions about my work, you can reach out to me through:
 
-- Email: yjie9093@gmail.com
 - LinkedIn: www.linkedin.com/in/jie-yang-41b84025a
 
 ## Contributions and Licensing
