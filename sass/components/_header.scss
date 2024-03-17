@@ -34,7 +34,7 @@
 
             ul {
                 padding: 0;
-                color: #fff;
+
                 z-index: 333;
 
                 li a {
@@ -44,9 +44,10 @@
                     height: 35px;
                     text-align: center;
                     font-size: 20px;
+                    color: a.$btn-hover;
                     &:hover {
 
-                        color: a.$btn-hover;
+                        color: #fff;
                     }
                 }
             }
