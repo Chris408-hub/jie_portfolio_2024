@@ -5,6 +5,7 @@
 export function textAnimation() {
 
   gsap.registerPlugin(SplitText);
+  
   const titles = document.querySelectorAll('#web');
   titles.forEach(title => {
 
