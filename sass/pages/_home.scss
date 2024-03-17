@@ -27,13 +27,16 @@
 
 }
     .self-image-hat{
-    position: absolute;
-    max-width: 45%;
-    height: auto;
-    z-index:-333;
-    top:100%;
-    right:-25px;
- 
+        position: fixed;
+        max-width: 200px;
+
+        z-index:-333;
+        bottom:0px;
+        right:5px;
+            img{
+                width: 100%;
+                height: auto;
+            }
 
     }
 
@@ -45,25 +48,35 @@
         font-size: 22px;
         margin-left: 35px;
     }
- .self-image-hat{
-    max-width: 35%;
-    height: auto;
-    z-index:-333;
-    top:70%;
- 
 
-    }
+    .self-image-hat{
+        position: fixed;
+        max-width: 299px;
+
+        z-index:-333;
+        bottom:10px;
+        right:15px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+
+}
 }
 
-
 @media screen and (min-width: 1200px) {
+    .self-image-hat{
+        position: fixed;
+        max-width: 399px;
 
- .self-image-hat{
-    max-width: 30%;
-    height: auto;
-    z-index:-333;
-    top:30%;
- 
+        z-index:-333;
+        bottom:15px;
+        right:25px;
+            img{
+                width: 100%;
+                height: auto;
+            }
 
     }
 }
